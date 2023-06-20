@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture {
+max-width: 100%;
+display: block;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'open sans', sans-serif;
+    transition: 0.3s;
+    background-color: #fff;
+    color: hsl(243, 87%, 12%);
+}
+
+.main {
+    min-width: 20rem;
+    max-width: 25rem;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    padding: 1.3rem;
+}
+
+.nav {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 3fr;
+}
+
+.navlinks {
+    justify-self: end;
+    grid-column: 2/4;
+    display: flex;
+    column-gap: 1.37rem;
+}
+
+.navlinks > * {
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: hsl(243, 87%, 12%);
+}
+
+.nav > img {
+    width: 6em;
+}
+
+.herobody {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.herotext {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    text-align: center;
+}
+
+.herotext > h1 {
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.herotext > p {
+    font-weight: 400;
+}
+
+.inputarea {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.inputemail {
+    padding: 1rem;
+    border-radius: 0.4rem;
+    font-size: 1em;
+    border: 0.063rem solid hsl(243, 87%, 12%, 95%);
+    box-shadow: 0px 0px 6px hsl(180, 2%, 36%, 30%);
+}
+
+.inputbutton {
+    padding: 1rem;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    border-radius: 0.4rem;
+    font-size: 1.3em;
+    font-weight: 400;
+    box-shadow: 0px 0px 6px hsl(180, 2%, 36%, 70%);
+}
+
+.inputbutton:hover {
+    cursor: pointer;
+    opacity: 90%;
+}
+
+.curvedbackground {
+   padding: 0px;
+   margin-bottom: -5rem;
+}
+
+.body {
+    background-color: hsl(240, 75%, 98%);
+    padding: 4.2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6rem;
+}
+
+.bodytext {
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.bodytext > h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.bodydescription {
+    font-size: 0.96em;
+    color: hsl(238, 22%, 44%);
+}
+
+.bodyaction {
+    text-align: center;
+    color: hsl(170, 45%, 43%);
+    font-size: 0.9em;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.bodyaction > span {
+    padding-bottom: 4px;
+    border-bottom: 0.063rem solid hsl(170, 45%, 43%);
+    display: flex;
+    width: 48.8%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyaction:hover {
+   opacity: 50%;
+}
+
+
+.bodyaction > span::after {
+    content: "";
+    display: inline-block;
+    background: url(images/icon-arrow.svg) no-repeat bottom;
+    width: 20px;
+    height: 20px;
+    margin-left: 0.53rem;
+}
+
+.testimonial {
+    margin: 5%;
+    padding: 7.5%;
+    background-color: #fff;
+    display: grid;
+    row-gap: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px hsl(180, 2%, 36%, 14%);
+}
+
+.testimonial > p {
+    font-size: 0.7em;
+}
+
+.testimonialfooter {
+    display: flex;
+    column-gap: 0.625rem;
+    align-items: center;
+}
+
+.testimonialfooter > img {
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50px;
+}
+
+.testfootertext > p:nth-of-type(1) {
+    font-size: 0.6em;
+    font-weight: 700;
+}
+
+.testfootertext > p:nth-of-type(2) {
+    font-size: 0.5em;
+}
+
+.subsection {
+    margin-top: -5rem;
+    margin-bottom: -5rem;
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+    text-align: center;
+    padding: 3.5rem 3rem;
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.subsectiontext {
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.subsectiontext > h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+.subsectiontext > p {
+    font-size: 0.96em;
+}
+
+.inputareaOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5em;
+}
+
+.input-email {
+    width: 80%;
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    font-size: 0.6em;
+    border: 0.063rem solid hsl(243, 87%, 12%, 5%);
+    box-shadow: 0px 0px 6px hsl(180, 2%, 36%, 30%);
+}
+
+.input-button {
+    width: 80%;
+    padding: 0.6rem;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    border-radius: 0.1rem;
+    font-size: 0.7em;
+    font-weight: 400;
+    box-shadow: 0px 0px 6px hsla(180, 4%, 19%, 30%);
+}
+
+.input-button:hover {
+    cursor: pointer;
+    background-color: hsl(224, 93%, 61%);
+}
+
+.footer {
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+    padding: 3.5rem 3rem 1rem 3rem;
+    
+}
+
+.footerwrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.blockOne {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+.footer >  img {
+    filter: brightness(0) invert(1);
+    width: 12rem;
+    margin-bottom: 3rem;
+}
+
+.blockOne > p:nth-of-type(1), p:nth-of-type(2) {
+    display: flex;
+    column-gap: 1.1rem;
+    align-items: center;
+    justify-content: start;
+    font-size: 1.2em;
+}
+
+.blockTwo, .blockThree {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    row-gap: 1.2rem;
+}
+
+.blockTwo > *, .blockThree > * {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.blockTwo a:hover, .blockThree a:hover {
+    cursor: pointer;
+    color: hsl(170, 45%, 43%);
+}
+
+.blockFour {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1.1rem;
+}
+
+.blockFour > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.blockFour > a:hover {
+    color: hsl(170, 45%, 43%);
+    border: 1px solid hsl(170, 45%, 43%);
+}
+
+@media only screen and (min-width: 600px) {
+    .main {
+        min-width: none;
+        max-width: 90rem;
+    }
+
+    .hero {
+        padding: 3rem;
+    }
+
+    .nav > img {
+        width: 30%;
+    }
+
+    .navlinks > * {
+       font-size: 1.3em;
+    }
+
+    .herobody {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .herobody > img {
+        order: 2;
+        grid-column: 2/3;
+    }
+
+    .herotext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 1.5rem;
+        text-align: start;
+    }
+
+    .inputarea {
+        flex-direction: row;
+        column-gap: 1rem;
+    }
+
+    .inputemail {
+        width: 19rem; 
+        height: 2.5rem;
+        padding: 1rem;
+        border-radius: 0.1rem;
+        font-size: 1em;
+        box-shadow: 0px 0px 6px hsl(180, 2%, 36%, 30%);
+    }
+    
+    .inputbutton {
+        width: 12rem;
+        height: 2.3rem;
+        padding-top: 0.7rem;
+        padding-bottom: 1.9rem;
+        border-radius: 0.1rem;
+        font-size: 1em;
+        box-shadow: 0px 0px 6px hsl(180, 2%, 36%, 50%);
+    }
+
+    .herotext > h1 {
+        width: 93%;
+        font-size: 2.3em;
+        font-weight: 700;
+    }
+    
+    .herotext > p {
+        font-weight: 400;
+        font-size: 1.1em;
+        width: 95%;
+    }
+
+    .body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0rem 3rem 6.1rem;
+    }
+
+    .body > img {
+        order: 2;
+        grid-column: 2/3;
+    }
+
+    .bodytext > h2 {
+        font-size: 2em;
+        text-align: start;
+        font-weight: 700;
+    }
+    
+    .bodydescription {
+        font-size: 0.96em;
+        font-size: 1.1em;
+    }
+
+    .bodyaction {
+        text-align: start;
+        font-size: 1.1em;
+        justify-content: start;
+    }
+    
+    .bodyaction > span {
+        width: 32%;
+        justify-content: start;
+    }
+
+    .testimonial {
+        margin: 0.5% 50% 0 0%;
+        padding: 5%;
+    }
+
+    .testimonial > p {
+        font-size: 0.8em;
+    }
+    
+    .testimonialfooter > img {
+        width: 1.975rem;
+        height: 1.975rem;
+    }
+    
+    .testfootertext > p:nth-of-type(1) {
+        font-size: 0.7em;
+    }
+    
+    .testfootertext > p:nth-of-type(2) {
+        font-size: 0.6em;
+    }
+
+    .subsection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        padding: 4.5rem 3rem;
+    }
+
+    .subsectiontext > h2 {
+        font-size: 1.8em;
+        text-align: start;
+    }
+    
+    .subsectiontext > p {
+        font-size: 1.1em;
+        width: 80%;
+    }
+
+    .inputareaOne {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        row-gap: 0.6rem;
+    }
+    
+    .input-email {
+        width: 70%;
+        height: 2.5rem;
+        border-radius: 0.01rem;
+        font-size: 1em;
+    }
+    
+    .input-button {
+        align-self: center;
+        height: 2.5rem;
+        width: 40%;
+        border-radius: 0.01rem;
+        font-size: 1em;
+    }
+
+    .footer >  img {
+        filter: brightness(0) invert(1);
+        width: 14rem;
+        margin-bottom: -2rem;
+        padding-left: 1.25rem;
+    }
+
+    .footer {
+        padding: 6rem 3rem 1rem 2rem;
+    }
+
+    .footerwrapper {
+        padding: 3.5rem 1.5rem 1rem 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 3rem;
+    }
+
+    .blockTwo, .blockThree {
+        margin-left: 6.25rem;
+    }
+    
+}
+
