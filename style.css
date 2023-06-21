@@ -124,8 +124,9 @@ body {
     row-gap: 1rem;
 }
 
-input 
-{ -webkit-border-radius: 0; 
+input[type="submit"] { 
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 
 .inputemail {
