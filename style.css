@@ -391,7 +391,7 @@ input[type="submit"] {
     }
 
     .hero {
-        padding: 3rem;
+        padding: 3.2rem 4rem 3rem 4rem;
     }
 
     .nav > img {
@@ -445,8 +445,8 @@ input[type="submit"] {
     }
 
     .herotext > h1 {
-        width: 93%;
-        font-size: 2.3em;
+        width: 94%;
+        font-size: 2.37em;
         font-weight: 700;
     }
     
@@ -459,7 +459,7 @@ input[type="submit"] {
     .body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 0rem 3rem 6.1rem;
+        padding: 0rem 4rem 6.1rem;
     }
 
     .body > img {
@@ -468,7 +468,7 @@ input[type="submit"] {
     }
 
     .bodytext > h2 {
-        font-size: 2em;
+        font-size: 2.2em;
         text-align: start;
         font-weight: 700;
     }
@@ -485,12 +485,12 @@ input[type="submit"] {
     }
     
     .bodyaction > span {
-        width: 32%;
+        width: 33%;
         justify-content: start;
     }
 
     .testimonial {
-        margin: 0.5% 50% 0 0%;
+        margin: 0.5% 45% 0 0%;
         padding: 5%;
     }
 
@@ -517,7 +517,7 @@ input[type="submit"] {
         align-items: center;
         justify-content: center;
         text-align: start;
-        padding: 4.5rem 3rem;
+        padding: 4.5rem 4rem;
     }
 
     .subsectiontext > h2 {
@@ -560,7 +560,7 @@ input[type="submit"] {
     }
 
     .footer {
-        padding: 6rem 3rem 1rem 2rem;
+        padding: 6rem 4rem 1rem 3rem;
     }
 
     .footerwrapper {
