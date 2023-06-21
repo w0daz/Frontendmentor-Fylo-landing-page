@@ -446,7 +446,7 @@ input[type="submit"] {
 
     .herotext > h1 {
         width: 94%;
-        font-size: 2.37em;
+        font-size: 2.26em;
         font-weight: 700;
     }
     
@@ -468,7 +468,7 @@ input[type="submit"] {
     }
 
     .bodytext > h2 {
-        font-size: 2.2em;
+        font-size: 2.1em;
         text-align: start;
         font-weight: 700;
     }
@@ -485,7 +485,7 @@ input[type="submit"] {
     }
     
     .bodyaction > span {
-        width: 33%;
+        width: 34%;
         justify-content: start;
     }
 
