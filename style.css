@@ -124,6 +124,7 @@ body {
     row-gap: 1rem;
 }
 
+/* removes rounded corner for mobile screens */
 input[type="submit"] { 
     -webkit-appearance: none;
     /* -webkit-border-radius: 0; */
