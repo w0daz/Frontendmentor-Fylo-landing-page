@@ -570,6 +570,10 @@ input[type="submit"] {
         row-gap: 3rem;
     }
 
+   .blockOne > p:nth-of-type(1) {
+    width: 102%;
+   }
+
     .blockTwo, .blockThree {
         margin-left: 6.25rem;
     }
