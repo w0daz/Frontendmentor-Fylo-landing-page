@@ -478,6 +478,10 @@ input[type="submit"] {
         font-size: 1em;
     }
 
+    #email-alert-cta {
+        margin-left: -1.8em;
+    }
+
     .inputbutton {
         width: 12rem;
         height: 2.3rem;
