@@ -468,7 +468,7 @@ input[type="submit"] {
     }
 
     .bodytext > h2 {
-        font-size: 2.05em;
+        font-size: 2.01em;
         text-align: start;
         font-weight: 700;
     }
@@ -490,7 +490,7 @@ input[type="submit"] {
     }
 
     .testimonial {
-        margin: 0.5% 45% 0 0%;
+        margin: 0.5% 44% 0 0%;
         padding: 5%;
     }
 
@@ -521,7 +521,7 @@ input[type="submit"] {
     }
 
     .subsectiontext > h2 {
-        font-size: 1.8em;
+        font-size: 1.5em;
         text-align: start;
     }
     
